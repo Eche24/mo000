@@ -31,7 +31,7 @@ EOF
 systemctl daemon-reload
 systemctl enable docker
 systemctl restart docker
-systemctl status docker
+
 
 apt-get update && sudo apt-get install -y apt-transport-https curl
 
@@ -48,4 +48,4 @@ apt-mark hold kubelet kubeadm kubectl
 systemctl daemon-reload
 systemctl enable kubelet
 systemctl restart kubelet
-systemctl status kubelet
+
